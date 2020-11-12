@@ -1,12 +1,12 @@
-version: 2.1
+version: 2
 jobs:
   build:
     docker:
       - image: circleci/ruby:2.4.1-node-browsers
-      
+    
     steps:
       - checkout
       
       - run:
-          command: echo Pau Nicolás
-          
+          name: run1
+          command: echo "Pau Nicolás"
